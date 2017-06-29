@@ -1,0 +1,34 @@
+#superman {
+  background-color: blue;
+  /*color: blue;*/
+}
+
+#pulpFiction {
+  background-color: red;
+  /*height: 90vh;*/
+}
+
+.center {
+  text-align: center;
+  color: yellow;
+  /*background-color: blue;*/
+  /*margin-top: 100px;*/
+}
+
+.thumbnail {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+#this {
+  position: relative;
+  background-color: blue;
+  height: 90vh;
+}
+
+#that {
+  position: relative;
+  background-color: red;
+  height: 90vh;
+}
