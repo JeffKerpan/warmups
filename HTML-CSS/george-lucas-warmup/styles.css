@@ -1,0 +1,78 @@
+/*Brennan's Code*/
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.poster {
+  height: 90vh;
+  width: 35vw;
+  background: #1a1a1a;
+  position: relative;
+  overflow: hidden; }
+  .poster .triangles {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30vh 17.5vw 0 17.5vw;
+    border-color: #aaaaaa transparent transparent transparent;
+    animation: fly 5s linear forwards; }
+  .poster .death-star {
+    position: absolute;
+    top: 37vh;
+    width: 40%;
+    height: 29%;
+    background: #aaaaaa;
+    border-radius: 100%;
+    opacity: 0;
+    animation: zoom 5s linear 1000ms forwards; }
+  .poster .death-star::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 14vh;
+    margin: auto;
+    width: 22%;
+    height: 22%;
+    background: #282828;
+    border-radius: 100%; }
+  .poster .lucas {
+    position: absolute;
+    bottom: 7vh;
+    color: white;
+    opacity: 0;
+    animation: zoom 2s linear 3000ms forwards; }
+  .poster .cover {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 75%;
+    background: rgba(26, 26, 26, 0.5); }
+
+@keyframes fly {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+    .c-col {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center; }
